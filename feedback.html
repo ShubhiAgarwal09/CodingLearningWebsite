@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Feedback</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .navbar { background-color: #484848; }
+.navbar .navbar-nav .nav-link { color: #fff; }
+.navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+/*.navbar .navbar-nav .active > .nav-link { color: #fbc531; }*/
+
+footer a.text-light:hover { color: #fed136!important; text-decoration: none; }
+footer .cizgi { border-right: 1px solid #535e67; }
+@media (max-width: 992px) { footer .cizgi { border-right: none; } }
+body{
+            margin: 0px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(feedback.png);
+    background-blend-mode: #ffffff7e;
+        }
+        fieldset{
+            border-radius: 7px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.submit-button{
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: coral;
+    color: black;
+    margin: 15px;
+}
+.submit-button:hover{
+    background-color:rgb(16, 66, 233);
+    color: cornsilk;
+}
+#feedback{
+    text-align: center;
+    background-color: cyan;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,rgba(176, 233, 21, 0.904),rgba(0, 55, 128, 0.733),rgba(255, 255, 0, 0.87));
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 950;
+    color: black;
+}
+
+.head2-form{
+    padding: 8px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-family: cursive;
+    word-spacing: 2.5px;
+    background-color: rgba(240, 225, 12, 0.527);
+    color: #000000;
+    font-weight: 1000;
+    font-size: large;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+/*.rating-css {
+  height: 250px;
+  width: 400px;
+  background: #101012;
+  border: 4px solid #838383;
+  padding: 20px;
+}*/
+.rating-css div {
+  color: #ffe400;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.rating-css input {
+  display: none;
+}
+.rating-css input + label {
+  font-size: 60px;
+  text-shadow: 1px 1px 0 #ffe400;
+  cursor: pointer;
+}
+.rating-css input:checked + label ~ label {
+  color: #838383;
+}
+.rating-css label:active {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.copyright{
+    float: right;
+}
+    </style>
+</head>
+<body>
+    <header>   
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <a class="navbar-brand text-white" href="Home.html"><i class="fa fa-graduation-cap fa-lg mr-2"></i>CODE NOW</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="nvbCollapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="Home_Html.html"><i class="fa fa-code"></i> HTML</a>
+                      </li>
+                      <li class="nav-item active pl-1">
+                          <a class="nav-link" href="#"><i class="fa fa-css3"></i> CSS</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="#"><i class="fa fa-file" aria-hidden="true"></i> PYTHON</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="#about"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i> ABOUT</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="register.html"><i class="fa fa-user-plus fa-fw mr-1"></i> Login/Signup</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link " href="feedback.html"><i class="fa fa-comments"></i> Feedback</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <div class="head2-form" style="margin-top: 20px; border-radius: 7px;">
+                    <p>Your valueable feedback will help in improving learning</p>
+                    <p>It will make us happy to know your comments .&#128522;</p>
+                </div>
+                <form action="feedback.php" method="POST" id="feedback" style="border-radius: 20px; margin-bottom: 20px;">
+                    <p>Your First Name: <input type="text" name="first_name" placeholder="Shubhi" required></p>
+                    <p>Your email: <input type="email" name="email" id="email" value="" placeholder="abcd1.ef@email.com" required></p>
+                    <p>Your Feedback: <textarea name="comment" id="comment" cols="30" rows="3" style="border-radius: 5px; color: chocolate; font-weight: 800;" placeholder="Your Comments Here" required></textarea></p>
+                    <div class="rating-css">
+                        <div class="star-icon">
+                          <input type="radio" name="rating1" id="rating1" value="1">
+                          <label for="rating1" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating2" value="2">
+                          <label for="rating2" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating3" value="3">
+                          <label for="rating3" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating4" value="4">
+                          <label for="rating4" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating5" value="5">
+                          <label for="rating5" class="fa fa-star"></label>
+                        </div>
+                      </div>
+                    <input type="submit" name="submit" value="SUBMIT" class="submit-button">
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <a href="FAQs.html">FAQs</a>
+        <a href="about.html">Contact</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a class="copyright" href="#">&copy; 2021 | Code Now</a>
+
+    </footer>
+</body>
+</html>

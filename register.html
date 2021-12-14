@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Register</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar { background-color: #484848; }
+.navbar .navbar-nav .nav-link { color: #fff; }
+.navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+/*.navbar .navbar-nav .active > .nav-link { color: #fbc531; }*/
+
+footer a.text-light:hover { color: #fed136!important; text-decoration: none; }
+footer .cizgi { border-right: 1px solid #535e67; }
+@media (max-width: 992px) { footer .cizgi { border-right: none; } }
+        body{
+            margin: 0px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(bg_register.png);
+    background-blend-mode: #ffffff7e;
+        }
+        fieldset{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit-button{
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: coral;
+    color: black;
+    margin: 15px;
+}
+.submit-button:hover{
+    background-color:rgb(233, 96, 16);
+    color: cornsilk;
+}
+#register{
+    text-align: center;
+    background-color: cyan;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,pink, rgb(34, 149, 226), pink);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 950;
+    color: black;
+}
+
+.head2-form{
+    padding: 8px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 2.5px;
+    background-color: darkmagenta;
+    color: #f7e11d;
+    font-weight: 1000;
+    font-size: large;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.copyright{
+    float: right;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <a class="navbar-brand text-white" href="Home.html"><i class="fa fa-graduation-cap fa-lg mr-2"></i>CODE NOW</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="nvbCollapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="Home_Html.html"><i class="fa fa-code"></i> HTML</a>
+                      </li>
+                      <li class="nav-item active pl-1">
+                          <a class="nav-link" href="#"><i class="fa fa-css3"></i> CSS</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="#"><i class="fa fa-file" aria-hidden="true"></i> PYTHON</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="#about"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i> ABOUT</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link" href="register.html"><i class="fa fa-user-plus fa-fw mr-1"></i> Login/Signup</a>
+                      </li>
+                      <li class="nav-item pl-1">
+                          <a class="nav-link " href="feedback.html"><i class="fa fa-comments"></i> Feedback</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <section class="form">
+        <fieldset>
+            <form  action="connect.php" method="POST" id="register" style="border-radius: 20px;">
+                <div class="head2-form" style="border-radius: 20px;">
+                    <h3>Join with our community</h3>
+                    <h3>Required information is followed by *</h3>
+                </div>
+                <p style="font-size: 500;">First Name:* <input type="text" name="first_name" placeholder="Your First Name " required></p>
+                <p>Last Name:* <input type="text" name="last_name" placeholder="Your Last Name" required> </p>
+                <legend>Gender:*</legend>
+                <p>
+                    Male<input type="radio" required name="gender" value="male" id="male">
+                    Female <input type="radio" name="gender" id="female" value="female"  required>
+                    Other <input type="radio" name="gender" id="other" value="other" required>
+                </p>
+                <legend>Nationality:*</legend>
+                <p>
+                    Indian<input type="radio" value="Indian" required name="nationality">
+                    OTHER <input type="radio" value="Other" required name="nationality">
+                </p>
+                <p>Email:* <input type="email" name="email" required placeholder="abc.def@email.com"></p>
+                <p>Contact Number: <input type="phone" name="contact" placeholder="58236XXXXX"></p>
+                <p>State:* 
+                    <select name="states" id="states" class="state-dropdown">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </p>
+                <div class="preferred-lang">
+                    <legend>Any preferred coding language</legend>
+                    C++ <input type="checkbox" value="c++" name="lang">
+                    JAVA <input type="checkbox" value="Java" name="lang">
+                    PYTHON <input type="checkbox" value=" Python" name="lang">
+                    HTML <input type="checkbox" value="Html" name="lang">
+                    CSS <input type="checkbox" value="Css" name="lang" >
+                    OTHER <input type="checkbox" value="Other" name="lang" >
+                </div>
+                <input type="submit" name="submit" value="REGISTER NOW" class="submit-button">
+            </form>
+        </fieldset>
+    </section>
+    <footer>
+        <a href="FAQs.html">FAQs</a>
+        <a href="about.html">Contact</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a class="copyright" href="#">&copy; 2021 | Code Now</a>
+
+    </footer>
+</body>
+</html>
