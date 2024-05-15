@@ -1,4 +1,4 @@
-# samplecodingwebsite
+# Coding Learning Website
 My aim is to design a website a tutorial coding learning website where with the help of various
 learning tools like PPTs, quizzes as well as assignment. Register page will help the user to
 login and in future would be able to sign in with his/her info and would also be able to see from
